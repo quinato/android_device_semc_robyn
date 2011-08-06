@@ -35,18 +35,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/semc/robyn/prebuilt/bootrec:root/sbin/bootrec
 
-#WIFI modules and configs
-PRODUCT_COPY_FILES += \
-    device/semc/robyn/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/semc/robyn/prebuilt/hostapd.conf:system/etc/wifi/softap/hostapd.conf \
-    device/semc/robyn/prebuilt/tiwlan_ap.ini:system/etc/wifi/softap/tiwlan_ap.ini \
-    device/semc/robyn/modules/sdio.ko:system/lib/modules/sdio.ko \
-    device/semc/robyn/modules/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko
-#    device/semc/robyn/modules/tiap_drv.ko:system/lib/modules/tiap_drv.ko \
-
-
-
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=120 \
 
