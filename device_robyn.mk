@@ -29,19 +29,12 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/robyn/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
-	device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml 
+    device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml 
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/robyn/prebuilt/init.delta.rc:root/init.delta.rc \
-    device/semc/robyn/prebuilt/ueventd.delta.rc:root/ueventd.delta.rc \
-    device/semc/robyn/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/robyn/prebuilt/bootrec:root/sbin/bootrec \
-    device/semc/robyn/recovery.fstab:root/recovery.fstab \
-    device/semc/robyn/prebuilt/vold.fstab:system/etc/vold.fstab \
-    device/semc/robyn/prebuilt/initlogo.rle:root/initlogo.rle \
+    device/semc/robyn/prebuilt/bootrec:root/sbin/bootrec
 
-    
 #WIFI modules and configs
 PRODUCT_COPY_FILES += \
     device/semc/robyn/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
