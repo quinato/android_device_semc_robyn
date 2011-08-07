@@ -105,6 +105,9 @@ adb pull /system/lib/libaudioeq.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/vold.fstab ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/sensors.conf ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/akmd2 ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/hw/hal_seport.default.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libsystemconnector/libuinputdevicejni.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libuinputdevicejni.so
+adb pull /system/lib/libsystemconnector_hal_jni.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libsystemconnector_hal_jni.so
 
 #offline charger
 adb pull /system/bin/chargemon ../../../vendor/$VENDOR/$DEVICE/proprietary
