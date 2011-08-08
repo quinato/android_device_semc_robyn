@@ -29,7 +29,8 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/robyn/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
-    device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml 
+    device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
+    device/semc/msm7x27-common/prebuilt/initlogo.rle:root/initlogo.rle 
 
 # Init files
 PRODUCT_COPY_FILES += \
@@ -41,4 +42,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # robyn uses high-density artwork where available
 PRODUCT_LOCALES += ldpi
 
+#new charging animations LDPI
+PRODUCT_COPY_FILES += \
+    device/semc/msm7x27-common/prebuilt/animations/anim1.rle:system/etc/semc/chargemon/anim1.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim2.rle:system/etc/semc/chargemon/anim2.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim3.rle:system/etc/semc/chargemon/anim3.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim4.rle:system/etc/semc/chargemon/anim4.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim5.rle:system/etc/semc/chargemon/anim5.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim6.rle:system/etc/semc/chargemon/anim6.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim7.rle:system/etc/semc/chargemon/anim7.rle \
+    device/semc/msm7x27-common/prebuilt/animations/anim8.rle:system/etc/semc/chargemon/anim8.rle 
 
