@@ -30,7 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/robyn/overlay
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
     device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
-    device/semc/msm7x27-common/prebuilt/initlogo.rle:root/initlogo.rle 
+    device/semc/msm7x27-common/prebuilt/initlogo_ldpi.rle:root/initlogo.rle 
 
 # Init files
 PRODUCT_COPY_FILES += \
