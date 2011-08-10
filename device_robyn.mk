@@ -27,6 +27,9 @@ PRODUCT_COPY_FILES += \
 # application settings that are stored in resourced.
 DEVICE_PACKAGE_OVERLAYS += device/semc/robyn/overlay
 
+PRODUCT_PACKAGES += \
+    lights.robyn 
+
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
     device/semc/robyn/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
